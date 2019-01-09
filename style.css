@@ -1,0 +1,12 @@
+.section{
+    min-height: 1000px;
+    overflow: hidden;
+    position: 'relative';
+    padding-top: 80%;
+}
+
+
+
+.section:nth-child(even){
+    background-color: #ccc;
+}

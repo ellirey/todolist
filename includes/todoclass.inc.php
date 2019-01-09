@@ -2,14 +2,22 @@
 
 class TodoClass {
 
-    public function __construct() {
-        echo 'Hi';
+    public $age;
+
+    public function __construct($age) {
+        $this->age = $age;
     }
     public function index() {
         
     }
+
+    public function getAge(){
+        echo $this->age;
+    }
 }
 
-$object = new TodoClass;
+$object = new TodoClass(31);
+
+$object->getAge();
 
 ?>
